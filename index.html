@@ -3,11 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>내 첫 웹앱</title>
+<title>주식 분석기</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>GitHub Pages 배포 성공!</h1>
-<p>축하합니다.</p>
-<p>이 페이지가 보이면 정상 배포된 것입니다.</p>
+
+<div class="container">
+<h1>📈 주식 분석 웹앱</h1>
+
+<input type="text" id="ticker" placeholder="예: AAPL">
+<button onclick="analyze()">분석하기</button>
+
+<div id="result"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
