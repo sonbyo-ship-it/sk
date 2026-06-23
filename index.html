@@ -3,20 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>주식 분석기</title>
+<title>주식 분석 웹앱</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-<h1>📈 주식 분석 웹앱</h1>
 
-<input type="text" id="ticker" placeholder="예: AAPL">
-<button onclick="analyze()">분석하기</button>
+<h1>📈 미국 주식 분석기</h1>
+
+<p>종목코드 입력 (예: AAPL, NVDA, TSLA)</p>
+
+<input
+type="text"
+id="ticker"
+placeholder="종목코드 입력">
+
+<button onclick="analyze()">
+분석하기
+</button>
 
 <div id="result"></div>
+
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
